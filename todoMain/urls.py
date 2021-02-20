@@ -8,9 +8,8 @@ from .yasg import urlpatterns as doc_urls  # Автодокументирова�
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('auth/', include('djoser.urls')),  # регистрация авторизация
-    path('auth/', include('djoser.urls.jwt')), # регистрация авторизация (токены не сохраняются в БД)
     # path('auth/', include('djoser.urls.authtoken')),  # регистрация авторизация (токены сохраняются в БД)
-
+    path('auth/', include('djoser.urls.jwt')),
     path('api/', include('todoApp.api.urls')),
 ]
 
