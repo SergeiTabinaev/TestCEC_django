@@ -23,3 +23,9 @@ Cоздать суперпользователя: manage.py createsuperuser
 Запустить сервер python manage.py runserver 
 
 Открыть http://127.0.0.1:8000/swagger/
+
+)создать пользователя(auth/users post запрос) 
+
+)войти (auth/jwt/create)
+
+)категории и таски - там все просто
