@@ -28,4 +28,4 @@ Cоздать суперпользователя: manage.py createsuperuser
 
 )войти (auth/jwt/create)
 
-)категории и таски (category, task)
+)категории и таски (category, task) - установлен permission IsAuthenticated, поэтому в Postman отправлять запросы прописывая в headers: а)Content-Type application/json б)Authorization JWT `access token полученный при запросе на auth/jwt/create`
